@@ -23,12 +23,12 @@ public class EndOfGame extends AppCompatActivity {
         int points=intent.getIntExtra(MainActivity.Score_Holder,0);
 
         score.setText("You earned" + points + "points!");
-        playAgainButton();
+        startNewGame();
 
 
     }
 
-    public void playAgainButton(){
+    public void startNewGame(){
        startNewGame=(Button)findViewById(R.id.StartNewGameButton);
         startNewGame.setOnClickListener(
                 new View.OnClickListener() {
